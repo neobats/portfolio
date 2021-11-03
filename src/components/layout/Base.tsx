@@ -1,4 +1,6 @@
 import * as React from "react"
+import { ThemeProvider } from "styled-components"
+import { theme } from "../../theme"
 import { FontVariation } from "../../types/FontVariation"
 import { GlobalStyle } from "../GlobalStyle"
 
@@ -11,7 +13,9 @@ const DEFAULT_FONT_SETTINGS: FontVariation = {
 
 export const Base: React.FC = ({ children }) => (
   <>
-    <GlobalStyle fontVariationSettings={DEFAULT_FONT_SETTINGS} />
-    {children}
+    <ThemeProvider theme={theme}>
+      <GlobalStyle fontVariationSettings={DEFAULT_FONT_SETTINGS} />
+      {children}
+    </ThemeProvider>
   </>
 )

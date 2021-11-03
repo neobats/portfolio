@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
     "paths": {
-      "*": [
-        "types/*",
-        "*"
-      ]
+      "*": ["types/*", "*"]
     },
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true
-  },
+  }
 }
