@@ -14,7 +14,15 @@ export default function Home() {
     <Base>
       <Center backgroundColor="neutralDark" gap="1rem">
         <StyledDiv></StyledDiv>
-        <Typography tag="h1">Hello World!</Typography>
+        <Typography
+          tag="h1"
+          color="neutralLight"
+          // overrides={css`
+          //   color: ${props => props.theme.colors.neutralLight};
+          // `}
+        >
+          Hello World!
+        </Typography>
       </Center>
     </Base>
   )

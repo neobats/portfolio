@@ -14,7 +14,11 @@ export const GlobalStyle = createGlobalStyle<{
 
   body {
     font-family: 'Commissioner', Arial, Helvetica, sans-serif;
+    font-size: 16px;
     font-variation-settings: ${props =>
       explodeFontSettings(props.fontVariationSettings)};
+
+    margin: 0;
+    padding: 0;
   }
 `
