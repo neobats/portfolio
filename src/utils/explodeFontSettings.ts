@@ -1,4 +1,6 @@
-import { FontVariation } from "FontVariation";
+import { FontVariation } from "../types"
 
 export const explodeFontSettings = (settings: FontVariation) =>
-  Object.keys(settings).map((key) => `'${key}' ${settings[key]} `).join(', ')
+  Object.keys(settings)
+    .map(key => `'${key}' ${settings[key]} `)
+    .join(", ")

@@ -1,3 +1,7 @@
+export * from "./Backdrop"
+export * from "./Borders"
 export * from "./Colors"
 export * from "./FontVariation"
+export * from "./Gradient"
+export * from "./Opacity"
 export * from "./StyledCSS"
