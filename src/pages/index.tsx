@@ -6,11 +6,7 @@ import { Typography } from "../components/system"
 // Nav ideas: https://www.behance.net/gallery/79473185/25-Animated-Tab-Bar-Designs-for-Inspiration?tracking_source=search_projects_recommended%7Cnavigation
 
 const StyledGrid = styled.header`
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1fr;
   width: 100%;
-  height: fit-content;
   align-items: center;
   justify-content: center;
 
@@ -18,13 +14,12 @@ const StyledGrid = styled.header`
 `
 
 const StyledCard = styled.article`
-  display: grid;
   padding: 2em 1.2em;
   margin: 2em 0;
   background-color: ${props => props.theme.colors.neutralDarkGlass};
   backdrop-filter: ${props => props.theme.backdropFilters.main};
-  border: ${props =>
-    `${props.theme.borders.size} ${props.theme.borders.style} ${props.theme.borders.color}`};
+  border: ${({ theme }) =>
+    `${theme.borders.size} ${theme.borders.style} ${theme.borders.color.white}`};
   border-radius: ${props => props.theme.borders.radius};
 `
 
